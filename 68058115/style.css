@@ -1,0 +1,101 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero{
+    width:100%;
+    min-height:100vh;
+    background-image: url(pic/bg.jpg);
+    background-size:cover;
+    background-position:center;
+    padding: 20px 8%;
+    position:relative;
+}
+
+/* ===== NAVBAR ===== */
+
+nav{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.logo{
+    width:120px;
+}
+
+nav ul{
+    flex:1;
+    text-align:center;
+}
+
+nav ul li{
+    list-style:none;
+    display:inline-block;
+    margin:0 20px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#333;
+    font-size:15px;
+}
+
+.login{
+    text-decoration:none;
+    color:#333;
+    margin-right:20px;
+}
+
+.btn-nav{
+    text-decoration:none;
+    padding:10px 25px;
+    border-radius:25px;
+    background: linear-gradient(45deg,#df4881,#c430d7);
+    color:#fff;
+}
+
+/* ===== HERO CONTENT ===== */
+
+.hero-content{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    margin-top:80px;
+}
+
+.text{
+    max-width:600px;
+}
+
+.text h1{
+    font-size:80px;
+    line-height:90px;
+    color:#222;
+}
+
+.text p{
+    margin:20px 0;
+    color:#444;
+}
+
+.btn-main{
+    display:inline-block;
+    padding:15px 40px;
+    border-radius:30px;
+    background: linear-gradient(45deg,#df4881,#c430d7);
+    color:#fff;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+.btn-main:hover{
+    opacity:0.8;
+}
+
+.image img{
+    width:450px;
+}
