@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เที่ยวเมืองไทย</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav id="navbar">
+    <div class="logo">Travel Thailand</div>
+    <ul>
+        <li><a href="#about">เกี่ยวกับ</a></li>
+        <li><a href="#gallery">แกลเลอรี</a></li>
+        <li><a href="#contact">ติดต่อ</a></li>
+    </ul>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+    <h1>ยินดีต้อนรับสู่ประเทศไทย</h1>
+    <p>ดินแดนแห่งรอยยิ้มและธรรมชาติที่สวยงามแหล่งท่องเที่ยวที่เต็มไปด้วยความฝัน</p>
+    <button onclick="scrollToSection()">เริ่มต้นสำรวจ</button>
+</section>
+
+<!-- About -->
+<section class="about" id="about">
+    <h2>เกี่ยวกับประเทศไทย</h2>
+    <p>
+        ประเทศไทยมีสถานที่ท่องเที่ยวมากมาย ทั้งทะเล ภูเขา วัดวาอาราม
+        และวัฒนธรรมที่เป็นเอกลักษณ์ ทำให้นักท่องเที่ยวทั่วโลกหลงรัก
+    </p>
+</section>
+
+<!-- Gallery -->
+<section class="gallery" id="gallery">
+    <h2>สถานที่ยอดนิยม</h2>
+    <div class="gallery-grid">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" onclick="openModal(this.src)">
+        <img src="https://images.unsplash.com/photo-1528181304800-259b08848526" onclick="openModal(this.src)">
+        <img src="https://images.unsplash.com/photo-1548013146-72479768bada" onclick="openModal(this.src)">
+        <img src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2" onclick="openModal(this.src)">
+    </div>
+</section>
+
+<!-- Contact -->
+<section class="contact" id="contact">
+    <h2>ติดต่อเรา</h2>
+    <p>อีเมล: onotza93@gmail.com</p>
+    <p>FB: Anuwat Rungsin</p>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>เที่ยวเมืองไทย © 2026</p>
+</footer>
+
+<!-- ปุ่มกลับขึ้นบน -->
+<button id="topBtn" onclick="scrollToTop()">↑</button>
+
+<!-- Modal -->
+<div id="imageModal" class="modal" onclick="closeModal()">
+    <img id="modalImg">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
